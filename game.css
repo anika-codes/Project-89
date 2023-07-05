@@ -1,5 +1,5 @@
 body {
-	background: rgb(150, 132, 255);
+	background: rgb(170, 158, 255);
 }
 
 .login_div1,
@@ -23,7 +23,7 @@ body {
 	font-size: 20px;
 }
 
-#word {
+#num1, #num2{
 	width: 60%;
 }
 
@@ -34,8 +34,9 @@ body {
 #output {
 	background: white;
 	border-radius: 10px;
-	border-top: 10px solid #AA4465;
+	border-top: 10px solid rgb(170, 158, 101);
 	padding: 10px;
 	float: none;
 	text-align: left;
 }
+
