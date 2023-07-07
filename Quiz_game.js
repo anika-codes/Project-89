@@ -1,3 +1,6 @@
+question_turn = "player1";
+answer_turn = "player2";
+
 function send(){
     number1 = document.getElementById("num1").value;
     number2 = document.getElementById("num2").value;
@@ -10,6 +13,27 @@ function send(){
     ans_div = ques+ans+check_btn
     document.getElementById("output").innerHTML = ans_div;
 
-    document.getElementById("number1").value = "none";
-    document.getElementById("number2").value = "null";
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
 }
+
+function check(){
+    get_answer = document.getElementById("ans").value;
+    if(get_answer == real_ans){
+        if(answer_turn == player1){
+            player1 = player1 + 1;
+        }
+        else{
+            player2 = player2 + 1;
+        }
+    }
+    if(question_turn = player1){
+        question_turn = player2;
+        document.getElementById("player_question").innerHTML = "Question Turn-" + player2_name;
+    }
+    else{
+        question_turn = player1;
+        document.getElementById("player_question").innerHTML = "Question Turn-" + player1_name;
+    }
+}
+

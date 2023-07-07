@@ -5,6 +5,6 @@ function add_user(){
     localStorage.setItem("user1",user_name1);
     localStorage.setItem("user2",user_name2);
 
-    window.location = "game_page.html"
+    window.location = "Quiz_game.html"
 
 }
